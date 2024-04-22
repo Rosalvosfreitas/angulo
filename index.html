@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+  <head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Rosalvo da Silva Freitas Jr">
+
+    <title>Bocadoro</title>
+
+    <!-- SEO -->
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+
+    <!-- FACEBOOK -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Bocadoro">
+    <meta property="og:site_name" content="Bocadoro">
+    <meta property="og:description" content="">
+    <meta property="og:url" content="https://">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image" content="https://">
+    <meta property="og:image:width" content="800">
+    <meta property="og:image:heigth" content="600">
+
+    <!--TWITTER  -->
+    <meta name="twitter:url" content="https://">
+    <meta name="twitter:title" content="Bocadoro">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:image" content="https://">
+
+    <!-- FONT DM SANS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+
+    <!-- TAILWIND CSS -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms"></script>
+    <script src="./tailwind-config.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/plugins/slick/slick.css">
+    <link rel="stylesheet" href="./assets/plugins/slick/slick-theme.css">
+    <link rel="stylesheet" href="./assets/plugins/fancybox/css/fancybox.min.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    
+    
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <header>
+      <nav class="relative py-5 text-gray-400 z-50 "> 
+        <div class="container">
+          <div class="flex items-center flex-wrap size-24 pt-8 -mb-10">
+            <a href="index.html" class="grow ">
+              <img src="./assets/img/logo angulo.png" alt="logo">
+            </a>
+            <button type="button" class="md:hidden text-2xl px-5 py-3">
+              <i class="fa-solid fa-bars"></i>
+            </button>
+            <div class="flex grow md:flex-row flex-col -mt-24">
+
+              <ul class="flex items-center ml-64 font-bold md:flex-row flex-col">
+                <li class="mx-6 my-3 md:my-0 ">
+                  <a href="#about" class="scroll">Angulo Prototipo</a>
+                </li>
+                <li class="mx-6 my-3 md:my-0">
+                  <a href="#products" class="scroll">Serviços</a>
+                </li>
+                <li class="mx-6 my-3 md:my-0">
+                  <a href="#products" class="scroll">Produtos</a>
+                </li>
+                <li class="mx-6 mt-3 md:mt-0">
+                  <a href="#contact" class="scroll bg-white text-primary md:bg-primary md:text-white px-10 py-3 rounded-lg hover:bg-primary-dark hover:text-white duration-200 whitespace-nowrap block">Entre em Contato</a>
+                </li>
+              </ul>
+
+              <ul class="flex items-center mx-10 my-5 md:my-0 justify-center">
+                <li class="mx-3">
+                  <a href="#"> 
+                    <img src="./assets/img/flag-brazil.svg" alt="flag-brazil">
+                  </a>
+                </li>
+                <li class="mx-3">
+                  <a href="#"> 
+                    <img src="./assets/img/flag-usa.svg" alt="flag-usa">
+                  </a>
+                </li>
+                <li class="mx-3">
+                  <a href="#"> 
+                    <img src="./assets/img/flag-spain.svg" alt="flag-spain">
+                  </a>
+                </li>
+
+              </ul>
+
+              <ul class="flex items-center justify-center">
+                <li class="mx-3">
+                  <a href="https://www.facebook.com/profile.php?id=100073845829295&mibextid=qi2Omg" target="_blank">
+                    <i class="fa-brands fa-facebook-f"></i>
+                  </a>
+                </li>
+                <li class="mx-3">
+                  <a href="https://www.instagram.com/angulo_prototipos" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                  </a>
+                </li>
+                <li class="mx-3">
+                  <div modal-open="#modal-search" class="cursor-pointer">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </div>
+                </li>
+              </ul>
+
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- HOME -->
+    <main id="home">
+
+      <!-- BANNER -->
+      <section id="banner" class=" text-white relative -top-96 md:py-10  overflow-hidden">
+
+        <!--<video src="./assets/img/banner.mp4" autoplay loop muted class=" top-0 absolute object-cover w-full h-full"></video> -->
+
+        <img src="assets/img/equipe.jpg" alt="" class="-mb-16">
+
+        <!--<div class="absolute w-full h-full bg-black/50 mix-blend-multiply top-0"></div>
+
+        <div class="container relative">
+          <div class="flex  items-center min-h-screen">
+
+           <div class="font-bold md:w-1/2 md:ml-32">
+
+              <h2 class="text-5xl">Frutas de qualidade com sabor incomparável</h2>
+              <div class="border-l border-primary pl-10 my-14 leading-8">
+                <p class="font-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eros est, lobortis eu cursus eu, pulvinar eu magna. Aenean non commodo orci, quis malesuada justo. Curabitur non feugiat mi, sed euismod turpis. Maecenas convallis at ante id tempus. Morbi ut porta velit. Vivamus pulvinar, nunc.</p>
+              </div>
+
+              <div class="flex flex-col md:flex-row text-center gap-3">
+                <a href="#" class="border-[0.5px] rounded-lg px-12 py-3 hover:bg-primary hover:border-primary duration-200">Saiba Mais</a>
+                <a href="#" class="border-[0.5px] rounded-lg px-7 py-3 hover:bg-primary hover:border-primary duration-200">Nossa Produção</a>
+              </div>
+            </div>
+          </div>
+        </div>-->
+        <h2 class="scroll-text absolute -bottom-6 title-bg -left-8 whitespace-nowrap text-21xl font-bold z-40 uppercase leading-none opacity-50">Angulo Prototipo</h2>
+      </section>
+
+      <!-- ABOUT -->
+      <!--<section id="about" class="py-20">
+        <div class="container">
+          <div class="flex flex-col md:flex-row gap-20">
+            <div>
+              <h2 class="text-secondary text-4xl font-bold mb-12">Entregamos saúde e sabor para o mundo</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="leading-8">
+              <p class="mb-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eros est, lobortis eu cursus eu, pulvinar eu magna. Aenean non commodo orci, quis malesuada justo. Curabitur non feugiat mi, sed euismod turpis. Maecenas convallis at ante id tempus. Morbi ut porta velit. Vivamus pulvinar, nunc a tristique luctus, diam metus consectetur est, at ultrices dolor sem ac urna. Duis rutrum arcu sed mauris porttitor bibendum.</p> 
+              <p>Suspendisse in justo nisi. Suspendisse fermentum accumsan fermentum. Pellentesque imperdiet risus eget risus posuere sagittis. Suspendisse eleifend leo sed elit blandit, in scelerisque nibh faucibus. Aliquam blandit felis vel eros feugiat, sit amet gravida nisi aliquam. Aenean pulvinar vestibulum accumsan. Suspendisse potenti. Cras imperdiet euismod commodo.</p>
+            </div>
+          </div>
+        </div>
+      </section>-->
+
+      <!-- GALLERY -->
+      <!--<section id="gallery" class="relative">
+        <button class=" btn-prev absolute h-full w-1/6 z-40 bg-gradient-to-r from-black/60 text-left pl-8">
+          <i class="fa-solid fa-chevron-left text-white bg-primary text-xl rounded-circle px-2.5 py-1"></i>
+        </button>
+        <div class="slick">
+          <div>
+            <a  data-fancybox href="./assets/img/gallery-1.png" class="group relative overflow-hidden block">
+              <img src="./assets/img/gallery-1.png" class="group-[:hover]:scale-110 duration-500 w-full" alt="">
+              <div class=" flex items-center justify-center absolute opacity-0 group-[:hover]:opacity-100 w-full h-full bg-black/50 top-0 left-0 ">
+                <i class="fa-regular fa-plus fa-2x text-white border-4 rounded-circle px-1.5 py-1"></i>
+              </div>
+            </a>
+          </div>
+          <div>
+            <a data-fancybox href="./assets/img/gallery-2.png"class="group relative overflow-hidden block">
+              <img src="./assets/img/gallery-2.png" class="group-[:hover]:scale-110 duration-500 w-full" alt="">
+              <div class=" flex items-center justify-center absolute opacity-0 group-[:hover]:opacity-100 w-full h-full bg-black/50 top-0 left-0 ">
+                <i class="fa-regular fa-plus fa-2x text-white border-4 rounded-circle px-1.5 py-1"></i>
+              </div>
+            </a>
+          </div>
+          <div>
+            <a data-fancybox href="./assets/img/gallery-3.png"class="group relative overflow-hidden block">
+              <img src="./assets/img/gallery-3.png" class="group-[:hover]:scale-110 duration-500 w-full" alt="">
+              <div class=" flex items-center justify-center absolute opacity-0 group-[:hover]:opacity-100 w-full h-full bg-black/50 top-0 left-0 ">
+                <i class="fa-regular fa-plus fa-2x text-white border-4 rounded-circle px-1.5 py-1"></i>
+              </div>
+            </a>
+          </div>
+          <div>
+            <a data-fancybox href="./assets/img/gallery-4.png"class="group relative overflow-hidden block">
+              <img src="./assets/img/gallery-4.png" class="group-[:hover]:scale-110 duration-500 w-full" alt="">
+              <div class=" flex items-center justify-center absolute opacity-0 group-[:hover]:opacity-100 w-full h-full bg-black/50 top-0 left-0 ">
+                <i class="fa-regular fa-plus fa-2x text-white border-4 rounded-circle px-1.5 py-1"></i> 
+              </div>
+            </a>
+          </div>
+        </div>
+        <button class="btn-next absolute h-full w-1/6 z-40 bg-gradient-to-l from-black/60 text-right top-0 right-0 pr-8">
+          <i class="fa-solid fa-chevron-right text-white bg-primary text-xl rounded-circle px-2.5 py-1"></i>
+        </button>
+      </section>-->
+
+      <!-- VISION -->
+      <section id="vision" class="bg-primary -mt-96 py-20  text-white">
+        <div class="container">
+          <div class="flex flex-col md:flex-row gap-12">
+            <div class="md:w-4/12 group">
+              <div class="group-[:hover]:text-yellow-300 group-[:hover]:-translate-y-5 duration-200">
+                <h2 class="text-2xl font-bold ">Visão</h2>
+                <p class="leading-8 text-sm font-medium mt-8 mb-16 md:mb-28">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eros est, lobortis eu cursus eu, pulvinar eu magna. Aenean non commodo orci, quis malesuada justo. Curabitur non feugiat mi, sed euismod turpis. Maecenas convallis at ante id tempus. Morbi ut porta velit. Vivamus pulvinar, nunc a tristique luctus, diam metus consectetur.</p>
+              </div>
+              <div class="h-1 w-1/3 bg-white group-[:hover]:bg-yellow-300"></div>
+            </div>
+            <div class="md:w-4/12 group">
+              <div class="group-[:hover]:text-yellow-300 group-[:hover]:-translate-y-5 duration-200">
+                <h2 class="text-2xl font-bold ">Missão</h2>
+                <p class="leading-8 text-sm font-medium mt-8 mb-16 md:mb-28">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eros est, lobortis eu cursus eu, pulvinar eu magna. Aenean non commodo orci, quis malesuada justo. Curabitur non feugiat mi, sed euismod turpis. Maecenas convallis at ante id tempus. Morbi ut porta velit. Vivamus pulvinar, nunc a tristique luctus, diam metus consectetur.</p>
+              </div>
+              <div class="h-1 w-1/3 bg-white group-[:hover]:bg-yellow-300"></div>
+            </div>
+            <div class="md:w-4/12 group">
+              <div class="group-[:hover]:text-yellow-300 group-[:hover]:-translate-y-5 duration-200">
+                <h2 class="text-2xl font-bold ">Propósito</h2>
+                <p class="leading-8 text-sm font-medium mt-8 mb-16 md:mb-28">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eros est, lobortis eu cursus eu, pulvinar eu magna. Aenean non commodo orci, quis malesuada justo. Curabitur non feugiat mi, sed euismod turpis. Maecenas convallis at ante id tempus. Morbi ut porta velit. Vivamus pulvinar, nunc a tristique luctus, diam metus consectetur.</p>
+              </div>
+              <div class="h-1 w-1/3 bg-white group-[:hover]:bg-yellow-300"></div>
+            </div>
+          </div>
+        </div>
+        <hr class="invisible md:visible">
+      </section>
+ 
+      <!-- PRODUCTS -->
+      <section id="products" class="py-20 relative">
+        <div class="text-center text-secondary ">
+          <h2 class="text-3xl">Produtos</h2>
+          <h2 class="text-4xl font-bold">Serviços</h2>
+        </div>
+        <div class="text-center text-gray-600 text-sm mt-10">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eros est, lobortis eu</p>
+        </div>
+        <div class="text-center mt-10 text-gray-600 font-bold flex flex-col md:flex-row gap-x-20 md:justify-center px-10 gap-y-3 md:gap-3">
+          <a href="#" class="bg-primary text-white border-gray-600 border-[0.5px] rounded-lg px-20 py-3">Produtos</a>
+          <a href="#" class="border-gray-600 border-[0.5px] rounded-lg px-14 py-3 hover:bg-primary hover:border-primary duration-200 hover:text-white">Serviços</a>
+        </div>
+        <div class="relative mt-20">
+          <button class="btn-prev absolute h-full w-1/6 z-40 text-left pl-8">
+            <i class="fa-solid fa-chevron-left text-white bg-primary text-xl rounded-circle px-2.5 py-1"></i>
+          </button>
+          <div class="slick">
+            <div modal-open="#modal-products" class="cursor-pointer mx-2 my-8 w-1/4 shadow-item text-center hover:-translate-y-5 duration-200 rounded-tl-2xl rounded-b-2xl md:px-10 md:py-14 px-5 py-7">
+              <img src="assets/img/molde arvore.jpg" class="mx-auto h-40 object-contain" alt="">
+              <h2 class="text-primary font-bold text-xl mt-10 mb-6">Molde para Injeção</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div modal-open="#modal-products" class="cursor-pointer mx-2 my-8 w-1/4 shadow-item text-center hover:-translate-y-5 duration-200 rounded-tl-2xl rounded-b-2xl md:px-10 md:py-14 px-5 py-7">
+              <img src="assets/img/projeto molde.jpg" class="mx-auto h-40 object-contain" alt="">
+              <h2 class="text-primary font-bold text-xl mt-10 mb-6">Projeto em 3D</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div modal-open="#modal-products" class="cursor-pointer mx-2 my-8 w-1/4 shadow-item text-center hover:-translate-y-5 duration-200 rounded-tl-2xl rounded-b-2xl md:px-10 md:py-14 px-5 py-7">
+              <img src="assets/img/injeção.jpg" class="mx-auto h-40 object-contain" alt="">
+              <h2 class="text-primary font-bold text-xl mt-10 mb-6">Analise de Injeção</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div modal-open="#modal-products" class="cursor-pointer mx-2 my-8 w-1/4 shadow-item text-center hover:-translate-y-5 duration-200 rounded-tl-2xl rounded-b-2xl md:px-10 md:py-14 px-5 py-7">
+              <img src="assets/img/molde spray.jpg" class="mx-auto h-40 object-contain" alt="">
+              <h2 class="text-primary font-bold text-xl mt-10 mb-6">Molde Spray</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div modal-open="#modal-products" class="cursor-pointer mx-2 my-8 w-1/4 shadow-item text-center hover:-translate-y-5 duration-200 rounded-tl-2xl rounded-b-2xl md:px-10 md:py-14 px-5 py-7">
+              <img src="assets/img/modelo.jpg" class="mx-auto h-40 object-contain" alt="">
+              <h2 class="text-primary font-bold text-xl mt-10 mb-6">Modelos</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div modal-open="#modal-products" class="cursor-pointer mx-2 my-8 w-1/4 shadow-item text-center hover:-translate-y-5 duration-200 rounded-tl-2xl rounded-b-2xl md:px-10 md:py-14 px-5 py-7">
+              <img src="assets/img/rtm.jpg" class="mx-auto h-40 object-contain" alt="">
+              <h2 class="text-primary font-bold text-xl mt-10 mb-6">Molde RTM</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div modal-open="#modal-products" class="cursor-pointer mx-2 my-8 w-1/4 shadow-item text-center hover:-translate-y-5 duration-200 rounded-tl-2xl rounded-b-2xl md:px-10 md:py-14 px-5 py-7">
+              <img src="assets/img/robo.jpeg" class="mx-auto h-40 object-contain" alt="">
+              <h2 class="text-primary font-bold text-xl mt-10 mb-6">Usinagem 5 eixos</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+          </div>
+          <button class="btn-next absolute h-full w-1/6 z-40 text-right pr-8 top-0 right-0">
+            <i class="fa-solid fa-chevron-right text-white bg-primary text-xl rounded-circle px-2.5 py-1"></i>
+          </button>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact" class="bg-primary text-white py-20 relative">
+        <div class="container">
+          <div class="flex flex-col md:flex-row gap-5">
+            <div class="md:w-1/3 text-3xl">
+              <h2 class="font-bold">Ficou com alguma dúvida?</h2>
+              <h2>Entre em contato conosco e retornaremos o mais breve possível!</h2>
+            </div>
+            <div class="md:w-2/3">
+              <form>
+                <div class="flex flex-col md:flex-row gap-5">
+                  <div class="md:w-1/2">
+                    <input type="text" placeholder="Nome" class="pl-0 bg-transparent focus:outline-none focus:shadow-none focus:ring-0 focus:border-b-white border-0 border-b-[0.3px] border-white w-full placeholder:text-white">
+                    <div class="mt-10">
+                      <input type="text" placeholder="Telefone" class="pl-0 bg-transparent focus:outline-none focus:shadow-none focus:ring-0 focus:border-b-white border-0 border-b-[0.3px] border-white w-full placeholder:text-white">
+                    </div>
+                  </div>
+                  <div class="md:w-1/2">
+                    <input type="text" placeholder="E-mail" class="pl-0 bg-transparent focus:outline-none focus:shadow-none focus:ring-0 focus:border-b-white border-0 border-b-[0.3px] border-white w-full placeholder:text-white">
+                    <div class="mt-10">
+                      <input type="text" placeholder="Assunto" class="pl-0 bg-transparent focus:outline-none focus:shadow-none focus:ring-0 focus:border-b-white border-0 border-b-[0.3px] border-white w-full placeholder:text-white">
+                    </div>
+                  </div>
+                </div>
+                <div class="mt-10">
+                  <textarea  rows="3" placeholder="Mensagem" class="pl-0 bg-transparent focus:outline-none focus:shadow-none focus:ring-0 focus:border-b-white border-0 border-b-[0.3px] border-white w-full placeholder:text-white"></textarea>  
+                </div>
+                <div class="mt-8 text-right">
+                  <button type="submit" class=" text-sm border-[0.5px] rounded-lg px-16 py-3 hover:bg-primary hover:border-primary duration-200">Enviar</button>  
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <img src="assets/img/logo angulo.png" alt="logo" class="invisible md:visible absolute bottom-10 left-20 hover:-translate-y-5 duration-200 size-32">
+      </section>
+
+      <!-- MAP -->
+      <section id="map">
+       <!--<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3484.5497700292995!2d-51.067457885228485!3d-29.148467397140497!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x951ebec4d7e0d16f%3A0x238731abe6efc139!2sFrutas%20Bocad&#39;oro%20-%20Irm%C3%A3os%20Palandi!5e0!3m2!1spt-BR!2sbr!4v1678994705236!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="w-full"></iframe>-->
+       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3485.6374784432605!2d-51.102823425172616!3d-29.11638218886251!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x951ebdd11e698d97%3A0xb239e6c8e2b06341!2s%C3%82ngulo%20Prot%C3%B3tipos%20Modelos%20e%20Moldes%20LTDA!5e0!3m2!1spt-BR!2sbr!4v1713567471785!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="w-full"></iframe>
+      </section>
+
+      <!-- MODAL PRODUCTS -->
+      <div id="modal-products" class=" modal fixed top-0 left-0 right-0 z-[999]" style="display: none;">
+        <div modal-close class="absolute top-0 left-0 right-0 bottom-0 bg-black/50 mix-blend-multiply"></div>
+        <div class="overflow-auto h-screen py-5">
+          <div class="container flex items-center min-h-full">
+            <div class="relative bg-white p-10 rounded-2xl">
+              <button type="button" modal-close class="absolute right-5 top-5 text-primary text-3xl">
+                <i class="fa-regular fa-circle-xmark"></i>
+              </button>
+              <div class="flex flex-col md:flex-row gap-y-8">
+                <div class="md:w-1/2">
+                  <img src="assets/img/molde arvore.jpg" alt="" class="my-auto">
+                </div> 
+                <div class="md:w-1/2">
+                  <h2 class="text-secondary font-bold text-4xl md:ml-16">Molde para injeção de P.U</h2>
+                  <p class="text-gray-700 my-10 md:mr-20 md:ml-20 leading-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eros est, lobortis eu cursus eu, pulvinar eu magna. Aenean non commodo orci, quis malesuada justo. Curabitur non feugiat mi, sed euismod turpis. Maecenas convallis at ante id tempus. Morbi ut porta velit. Vivamus pulvinar, nunc a tristique luctus, diam metus consectetur est, at ultrices dolor sem ac urna. Duis rutrum arcu sed mauris porttitor bibendum.</p>
+                  <a href="#contact" class="bg-primary text-white ml-48 px-10 py-3 rounded-lg hover:bg-primary-dark duration-200 whitespace-nowrap inline-block">Entre em Contato</a>
+                
+                </div>
+               
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+      <!-- MODAL-SEARCH -->
+      <div id="modal-search" class=" modal fixed top-0 left-0 right-0 z-[999]" style="display: none;">
+        <div modal-close class="absolute top-0 left-0 right-0 bottom-0 bg-black/50 mix-blend-multiply"></div>
+        <button type="button" modal-close class="absolute right-5 top-5 text-white text-3xl">
+          <i class="fa-regular fa-circle-xmark"></i>
+        </button>
+        <div class="overflow-auto h-screen py-5">
+          <div class="container flex items-center min-h-full">
+            <div class="relative bg-white p-10 md:p-20 rounded-2xl w-full">
+              <div class="relative border border-gray-400 rounded-full flex my-1">
+                <input type="text" placeholder="O que você está procurando?" class=" text-gray-700 pl-6 bg-transparent focus:outline-none focus:shadow-none focus:ring-0 border-0 w-full">
+                <a href="./search.html" class="my-auto">
+                  <i class="fa-solid fa-magnifying-glass border-2 text-white bg-primary p-4 m-1 rounded-full"></i>
+                </a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer id="footer" class="bg-primary pt-16 md:pt-20  pb-10 text-white">
+      <div class="container">
+        <div class="flex flex-col gap-y-5 md:flex-row text-center md:text-left">
+          <div class="md:w-1/4 mb-5">
+            <a href="index.html">
+              <img src="assets/img/logo angulo.png" alt="logo" class="mx-auto md:ml-0 size-24">
+            </a>
+          </div>
+          <div class="md:w-1/4 text-sm font-bold">
+            <a href="#about">Angulo Prototipo</a>
+            <div class="mt-5">
+              <a href="#products">Serviços</a>
+            </div>
+          </div>
+          <div class="md:w-1/4 text-sm font-bold mb-5">
+            <a href="#products">Produtos</a>
+            <div class="mt-5">
+              <a href="#contact">Fale Conosco</a>
+            </div>
+          </div>
+          <div class="md:w-1/4 text-sm">
+            <h2 class="font-bold">Contato</h2>
+            <div class="md:mt-5 opacity-70 mb-5">
+              <a href="tel:555499923-0974" class="block">+55 54 99923-0974</a>
+              <a href="mailto:palandi@terra.com.br" class="block">angulo.prototipos@hotmail.com</a>
+            </div>
+          </div>
+          <div class="md:w-1/4 text-sm ">
+            <h2 class="font-bold">Endereço</h2>
+            <div class="md:mt-5 opacity-70 mb-5">
+              <h2> AV. Rio Branco, 3776,</h2>
+              <h2>Caxias do Sul, 95080-145</h2>
+            </div>
+          </div>
+        </div>
+        <hr class="mt-8 md:mt-16 mb-10 ">
+        <h2 class="opacity-70 text-center">Copyright © 2023 - Todos os direitos reservados</h2>
+      </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="./assets/plugins/jquery/jquery.min.js"></script>
+    <script src="./assets/plugins/slick/slick.min.js"></script>
+    <script src="./assets/plugins/fancybox/js/fancybox.min.js"></script>
+    <script src="./assets/js/menu.js"></script>
+    <script src="./assets/js/main.js"></script>
+
+  </body>
+
+</html>
